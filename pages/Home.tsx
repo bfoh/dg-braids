@@ -26,7 +26,7 @@ const Home: React.FC = () => {
             </h1>
             <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-xl font-light leading-relaxed">
               Discover a world of sophistication and personalized beauty at DG Braids.
-              Our salon is more than just a place for haircuts; it's a haven where your unique style takes center stage.
+              Our salon is more than just a place for African braids; it's a haven where your unique style takes center stage.
             </p>
             <Link
               to="/booking"
