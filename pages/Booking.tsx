@@ -173,12 +173,6 @@ const Booking: React.FC = () => {
                   <span className="text-gray-600">Time:</span>
                   <span className="font-medium">{formData.time}</span>
                 </div>
-                {formData.stylist !== 'Any' && (
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Stylist:</span>
-                    <span className="font-medium">{formData.stylist}</span>
-                  </div>
-                )}
               </div>
             </div>
             <button
@@ -248,22 +242,6 @@ const Booking: React.FC = () => {
                       </div>
                     </button>
                   ))}
-                </div>
-
-                <div className="mb-6">
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Stylist Preference (Optional)
-                  </label>
-                  <select
-                    className="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
-                    value={formData.stylist}
-                    onChange={(e) => updateForm('stylist', e.target.value)}
-                  >
-                    <option value="Any">Any Available Stylist</option>
-                    <option value="Davina">Davina (Lead Stylist)</option>
-                    <option value="Amina">Amina</option>
-                    <option value="Sarah">Sarah</option>
-                  </select>
                 </div>
 
                 <div className="flex justify-end">
@@ -444,10 +422,6 @@ const Booking: React.FC = () => {
                 <div>
                   <span className="text-gray-500 block mb-1">Service</span>
                   <span className="font-medium text-gray-900">{formData.service || '-'}</span>
-                </div>
-                <div>
-                  <span className="text-gray-500 block mb-1">Stylist</span>
-                  <span className="font-medium text-gray-900">{formData.stylist}</span>
                 </div>
                 <div>
                   <span className="text-gray-500 block mb-1">Date</span>
